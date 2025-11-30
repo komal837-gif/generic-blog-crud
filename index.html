@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=content-width,initial-scale=1.0">
+	<head>
+		<title>post task</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/css/style.css"></link>
+	</head>
+	<body>
+         <div class="container my-4">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<form id="blogForm" class="blogForm mb-5">
+						<div class="form-group">
+							<label for="title">Blog Title</label>
+							<input type="text" class="form-control" id="title" required>
+						</div>
+						<div class="form-group">
+							<label for="content">Blog Content</label>
+							<textarea type="text" class="form-control" id="content" required></textarea>
+						</div>
+						<div class="form-group">
+							<label for="userId">userId</label>
+							<select class="form-control" id="userId" required>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<button type="submit" id="addBtn" class="btn btn-sm btn-primary btn-block">Add Blog</button>
+						<button type="button" id="updateBtn" class="btn btn-sm btn-primary btn-block d-none">Update Blog</button>
+					</form>
+					<div id="postContainer" class="d-flex flex-column-reverse">
+						<!-- <div class="card"> -->
+							<!-- <div class="card-header"> -->
+								<!-- <h3 class="m-0">Title</h3> -->
+							<!-- </div> -->
+							<!-- <div class="card-body"> -->
+								<!-- <p class="m-0"> -->
+								 <!-- Lorem Ipsum -->
+								<!-- </p> -->
+							<!-- </div> -->
+							<!-- <div class="card-footer"> -->
+								<!-- <button class="btn btn-sm btn-outline-primary">Edit</button> -->
+						        <!-- <button class="btn btn-sm btn-outline-danger">Remove</button> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="loader d-none" id="loader">
+			<div class="spinner-border text-primary" role="status">
+			</div>
+			<p>Loading....</p>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
